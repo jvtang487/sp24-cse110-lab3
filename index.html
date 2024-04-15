@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <meta charset="UTF-8">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/media/favicon.ico">
     <head>
         <title>Meeting Recap</title>
     </head>
@@ -21,18 +21,22 @@
                 <header>
                     <div>
                     <h2>Attendance List</h2>
-                        <h3>Attended</h3>
+                    <details>
+                        <summary><strong>Attended</strong></summary>
                         <ul>
                             <li>John Doe</li>
                             <li>Jane Doe</li>
                             <li>Joe Shmoe</li>
                         </ul>
-                        <h3>Did Not Attend</h3>
+                    </details>
+                    <details>
+                        <summary><strong>Did Not Attend</strong></h3></summary>
                         <ul>
                             <li>Bod Builder</li>
                             <li>John Deere</li>
                             <li>Burg King</li>
                         </ul>
+                    </details>
                     </div>
                 </header>
             </section>
@@ -55,18 +59,45 @@
                     <p>This can be found in the book <i>Random Jargon</i></p>
                     <p>It is <em>important</em> that you read up on some jargon</p>
                     <p>It is also important to have a <br> break</p>
-                    <img >
+                    <img src="/media/Jargon.webp" alt="Jargon definition" width="400" height="200">
                     <h4>Audio Recording</h4>
-
+                    <audio controls>
+                        <source src="/media/technical jargon.mp3" type="audio/mpeg">
+                    </audio>
                     <hr>
 
                     <h4>Video Recording</h4>
+                    <video width="400" height="400" controls>
+                        <source src="/media/jargonvid.mp4" type="video/mp4">
+                    </video>
                 </header>
             </section>
             <section>
                 <header>
                     <h4>Comments</h4>
-                    <p><strong>Any comments or questions?!</strong></p>
+                    <form method="get">
+                        <fieldset>
+                            <legend>Any comments or questions?!</legend>
+                        <label for="fname">First name: </label>
+                        <input type="text" id="fname" name="fname"> <br>
+                        <label for="comments">Comments or Questions:</label><br>
+                        <textarea id="comments" name="comments" rows="5" cols="50">
+                        </textarea><br>
+                        <label for="feedback">Were the notes helpful?</label><br>
+                        <input list="feedbacks" name="feedback" id="feedback">
+                        <datalist id="feedbacks">
+                            <option value="Yes"> 
+                            <option Value="No">
+                        </datalist><br>
+                        <label for="attendence">Will you attend the next meeting?</label>
+                        <select name="attendence" id="attendence">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                            <option value="maybe so">Maybe so</option>
+                        </select><br>
+                        <button type="submit">Submit</button>
+                    </fieldset>
+                    </form>
                 </header>
             </section>
         </main>
