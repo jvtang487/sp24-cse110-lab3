@@ -1,2 +1,2 @@
-# Lab 2 - Starter
-https://jvtang487.github.io/Lab2_Starter/
+# Lab 3
+https://jvtang487.github.io/sp24-cse110-lab3/
