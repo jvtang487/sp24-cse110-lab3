@@ -1,0 +1,15 @@
+body{
+    background-color: var(--color, beige);
+}
+
+h1{
+    color: #000080;
+}
+
+h2{
+    color: rgb(1,121,111);
+}
+
+details{
+    color: hsl(127, 45%, 37%);
+}
