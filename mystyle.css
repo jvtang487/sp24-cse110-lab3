@@ -122,7 +122,6 @@ h1:has(+h3){
 
 .emphasis{
     color: black;
-    & > em{
-        color: brown;
+    & > em{color: brown;
     }
 }
