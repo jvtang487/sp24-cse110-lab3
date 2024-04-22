@@ -1,9 +1,12 @@
 body{
     background-color: var(--color, beige);
+    
 }
 
-h1{
+.titles{
     color: #000080;
+    margin: auto auto;
+    text-align: center;
 }
 
 h2{
@@ -12,4 +15,29 @@ h2{
 
 details{
     color: hsl(127, 45%, 37%);
+}
+
+nav{
+    padding: 0.5Q;
+    text-align: center;
+    margin: auto auto;
+}
+.text-border{
+    display: inline-block;
+    border: 50px #000;
+    border-style: solid;
+    border-width: 0.1em;
+    border-radius: 0.1cm;
+}
+main{
+    margin-left: 300px;
+    margin-top: 40px;
+    margin-bottom: auto;
+    margin-right: 300px;
+    border: 1px #000;
+    border-style: solid;
+    padding-top: 1ch;
+    padding-left: 1ch;
+    padding-right: 1ch;
+    padding-bottom: 1ch;
 }
