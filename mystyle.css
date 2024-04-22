@@ -9,6 +9,7 @@ body{
     text-align: center;
     text-decoration: underline;
     position: static;
+    font-family: "Roboto", Calibri, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h2{
@@ -38,10 +39,10 @@ nav{
 }
 
 main{
-    margin-left: 300px;
-    margin-top: 40px;
+    margin-left: auto;
+    margin-top: auto;
     margin-bottom: auto;
-    margin-right: 300px;
+    margin-right: auto;
     border: 1px #000;
     border-style: solid;
     padding-top: 1ch;
@@ -77,4 +78,10 @@ button:hover{
 
 button:active{
     box-shadow: 2px 2px 5px #000;
+}
+
+@media (width <= 500px) {
+    .small-text{
+        font-size: large;
+    }
 }
