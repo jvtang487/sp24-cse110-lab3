@@ -33,9 +33,6 @@ nav{
     border-radius: 0.1cm;
     max-width: fit-content;
     max-height: fit-content;
-    & > a{
-        color:brown;
-    }
 }
 
 main{
@@ -121,4 +118,11 @@ h1:has(+h3){
 
 #phrasetitle{
     color: white;
+}
+
+.emphasis{
+    color: black;
+    & > em{
+        color: brown;
+    }
 }
