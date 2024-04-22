@@ -120,9 +120,15 @@ h1:has(+h3){
     color: white;
 }
 
-.emphasis{
-    color: black;
-    & >a {
-        color: brown;
+.example {
+    font-family: system-ui;
+    font-size: 1.2rem;
+    & > a {
+      color: tomato;
+      &:hover,
+      &:focus {
+        color: ivory;
+        background-color: tomato;
+      }
     }
-}
+  }
