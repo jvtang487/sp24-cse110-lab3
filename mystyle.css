@@ -12,13 +12,10 @@ body{
     font-family: "Roboto", Calibri, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h2{
+h2, details {
     color: rgb(1,121,111);
 }
 
-details{
-    color: hsl(127, 45%, 37%);
-}
 
 nav{
     padding: 1Q;
@@ -36,6 +33,9 @@ nav{
     border-radius: 0.1cm;
     max-width: fit-content;
     max-height: fit-content;
+    & > a{
+        color:brown;
+    }
 }
 
 main{
@@ -82,6 +82,43 @@ button:active{
 
 @media (width <= 500px) {
     .small-text{
-        font-size: large;
+        font-size: larger;
     }
+}
+
+a[href="#"], .attendence{
+    font-size: 20px;
+}
+
+article > p{
+    flex-wrap: wrap;
+}
+
+fieldset > legend{
+    font-size: 20px;
+}
+
+p ~p{
+    background-color: azure;
+    max-width: fit-content;
+}
+
+div + p{
+    background-color: lightblue;
+}
+
+ul li {
+    list-style-type: circle;
+}
+
+p.italicize{
+    color: red;
+}
+
+h1:has(+h3){
+    color:darkcyan;
+}
+
+#phrasetitle{
+    color: white;
 }
